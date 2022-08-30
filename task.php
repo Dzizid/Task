@@ -15,19 +15,19 @@
     <p class="text-center">Создание задачи</p>
 
     <form class="row g-3">
-        <div class="col-md-6">
+        <div class="col-md-5">
             <label for="inputEmail4" class="form-label">Эл. адрес <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
             <input type="email" class="form-control" id="inputEmail4">
         </div>
-        <div class="col-12">
+        <div class="col-md-5">
             <label for="inputAddress" class="form-label">Название <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
             <input type="text" class="form-control" id="inputAddress" placeholder="Введите название задачи">
         </div>
-        <div class="col-12">
+        <div class="col-10">
             <label for="inputAddress2" class="form-label">Описание задачи <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
             <input type="text" class="form-control" id="inputAddress2" placeholder="Оставьте описание для задачи">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
             <label for="inputCity" class="form-label">Род задачи <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
             <select id="inputState" class="form-select">
                 <option>Выберите...</option>
@@ -37,7 +37,7 @@
                 <option>4</option>
             </select>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
             <label for="inputState" class="form-label">Место <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
             <select id="inputState" class="form-select">
                 <option>Выберите...</option>
@@ -48,8 +48,8 @@
             </select>
         </div>
 
-        <div>
-            <div class="col-md-2">
+
+            <div class="col-md-3">
                 <label for="inputZip" class="form-label">Месяц <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
                 <select id="inputState" class="form-select">
                     <option value="Январь">Январь</option>
@@ -67,7 +67,7 @@
                 </select>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <label for="inputZip" class="form-label">День <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
                 <select id="inputState" class="form-select">
                     <option value="">1</option>
@@ -103,9 +103,6 @@
                     <option value="">31</option>
                 </select>
             </div>
-        </div>
-
-
 
 
         <div class="col-12">
@@ -120,7 +117,6 @@
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Сохранить задачу</button>
         </div>
-
     </form>
     </div>
 
