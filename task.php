@@ -1,5 +1,5 @@
 <?php
-
+include 'taskuser.php';
 
 
 ?>
@@ -16,7 +16,6 @@
     <link rel="script" href="index.js">
 </head>
 <body>
-
 
     <div class="center">
     <p class="text-center">Создание задачи</p>
@@ -59,7 +58,7 @@
             <div class="col-md-3">
                 <label for="inputZip" class="form-label">Месяц <a href="#" class="tooltip-test" title="Tooltip">?</a></label>
                 <select id="inputState" class="form-select">
-                    <option value="Январь">Январь</option>
+                    <!--<option value="Январь">Январь</option>
                     <option value="Февраль">Февраль</option>
                     <option value="Март">Март</option>
                     <option value="Апрель">Апрель</option>
@@ -70,7 +69,10 @@
                     <option value="Сентабрь">Сентабрь</option>
                     <option value="Октябрь">Октябрь</option>
                     <option value="Ноябрь">Ноябрь</option>
-                    <option value="Декабрь">Декабрь</option>
+                    <option value="Декабрь">Декабрь</option>-->
+                    <?
+                        echo $usermonth;
+                    ?>
                 </select>
             </div>
 
@@ -127,7 +129,9 @@
     </form>
     </div>
 
-
+<?php
+$conn->close();
+?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
