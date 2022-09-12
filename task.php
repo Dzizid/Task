@@ -1,6 +1,22 @@
 <?php
-include 'taskuser.php';
+//include 'taskuser.php';
 
+$conn = mysqli_connect("localhost", "root", "", "task");
+
+if ($conn === false) {
+    die("Error" . mysqli_connect_error());
+}
+
+$sql = 'SELECT * FROM task_user';
+if($result = $conn->query($sql)) {
+    foreach ($result as $row ) {
+        $id = $row['id'];
+        $email = $row['email'];
+        $name = $row['name'];
+        $month = $row['month'];
+        $day = $row['day'];
+    }
+}
 
 ?>
 
@@ -16,7 +32,7 @@ include 'taskuser.php';
     <link rel="script" href="index.js">
 </head>
 <body>
-
+    <? echo "$user_id"?>
     <div class="center">
     <p class="text-center">Создание задачи</p>
 
@@ -70,9 +86,7 @@ include 'taskuser.php';
                     <option value="Октябрь">Октябрь</option>
                     <option value="Ноябрь">Ноябрь</option>
                     <option value="Декабрь">Декабрь</option>-->
-                    <?
-                        echo $usermonth;
-                    ?>
+
                 </select>
             </div>
 
